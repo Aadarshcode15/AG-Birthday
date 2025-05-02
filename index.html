@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A fun and interactive birthday greeting page with confetti, animations, and a special message.">
+    <meta name="keywords" content="Birthday, Greeting, Animation, Confetti, Celebration">
+    <meta name="author" content="Aadarsh Patil">
+
+    <title>Happy Birthday!</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="confetti"></canvas>
+
+    <div class="container">
+        <h1 id="animatedText" class="fade-in">Happy Birthday Aditi!</h1>
+        <img src="cake.png" alt="Birthday Cake" class="cake fade-in">
+        <p class="fade-in">"Wishing you a day filled with love, laughter, and endless joy!<br> May this birthday bring
+            you all the success and happiness you truly deserve.<br> Keep shining bright and chasing your dreams —
+            <br>the best is yet to come. Happy Birthday!"</p>
+
+        <div class="buttons">
+            <button onclick="toggleSong()">🔊 Play the Song</button>
+            <button onclick="openPopup()">🎁Special Message</button>
+        </div>
+    </div>
+
+    <!-- Popup Message -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>🎈 Special message for you 🎈</h2>
+            <p>Happy Birthday Aditi! I’m so proud of you and everything you’re working for. I have seen your hardwork,
+                living far away from the family isn't easy. But your dedication hats off to it. You will definitely
+                achieve your goals and I believe in you.
+                No matter how hard the journey gets, I’ll always be here, cheering you on. I trust you, I support you,
+                and I know you’re going to make your dreams come true.🎂🎉✨</p>
+        </div>
+    </div>
+
+    <audio id="birthdaySong" src="happy_birthday.mp3" autoplay loop></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
